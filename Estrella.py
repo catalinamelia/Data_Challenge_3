@@ -45,13 +45,3 @@
         La luminosidad de la secuencia principal de la estrella (con retorno del tipo flotante).
         """
         return float(L_sun * (self._masa / M_sun)**3.5)
-    def velocidad_escape(self):
-        """
-        Esta función calcula la velocidad de escape de la estrella.
-        
-        Retorna:
-        La velocidad de escape de la estrella (con retorno del tipo flotante).
-        """
-        G = 6.674e-11  # Constante gravitacional
-        velocidad = np.sqrt((2 * G * self._masa) / self._radio)
-        return velocidad
